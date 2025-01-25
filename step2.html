@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 2: Submit Documents - Karnavati University</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #005f52;
+            border-radius: 5px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        input[type="file"]:focus {
+            outline: none;
+            border-color: #00796b;
+            box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+        }
+
+        .optional {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005f52;
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="institutes.html">Institutes</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="campus-life.html">Campus Life</a>
+            <a href="scholarships.html">Scholarships</a>
+            <a href="placements.html">Placements</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Step 2: Submit Documents</h1>
+        <form action="/upload_documents" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="aadhar-card">Aadhar Card:</label>
+                <input type="file" id="aadhar-card" name="aadhar-card" accept=".pdf, .jpg, .jpeg, .png" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tenth-certificate">10th Marksheet/Certificate:</label>
+                <input type="file" id="tenth-certificate" name="tenth-certificate" accept=".pdf, .jpg, .jpeg, .png" required>
+            </div>
+
+            <div class="form-group">
+                <label for="twelfth-certificate">12th Marksheet/Certificate:</label>
+                <input type="file" id="twelfth-certificate" name="twelfth-certificate" accept=".pdf, .jpg, .jpeg, .png" required>
+            </div>
+
+            <div class="form-group">
+                <label for="leaving-certificate">School/College Leaving Certificate:</label>
+                <input type="file" id="leaving-certificate" name="leaving-certificate" accept=".pdf, .jpg, .jpeg, .png" required>
+            </div>
+
+            <div class="form-group">
+                <label for="olympiads">Olympiads Certificates (Optional): <span class="optional">If any</span></label>
+                <input type="file" id="olympiads" name="olympiads" accept=".pdf, .jpg, .jpeg, .png">
+            </div>
+
+            <div class="form-group">
+                <label for="co-curricular">Co-curricular Certificates (Optional): <span class="optional">If any</span></label>
+                <input type="file" id="co-curricular" name="co-curricular" accept=".pdf, .jpg, .jpeg, .png">
+            </div>
+
+            <button type="submit">Submit Documents</button>
+        </form>
+    </main>
+    <footer>
+        <p>© Karnavati University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

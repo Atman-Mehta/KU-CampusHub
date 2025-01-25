@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 3: Pay Fees - Karnavati University</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #005f52;
+            border-radius: 5px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #00796b;
+            box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+        }
+
+        button {
+            background-color: #00796b;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005f52;
+        }
+
+        .payment-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .payment-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .payment-option input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #00796b; /* Ensures visible styling for radio button */
+        }
+
+        .captcha {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .captcha img {
+            height: 50px;
+        }
+
+        .captcha input {
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="institutes.html">Institutes</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="campus-life.html">Campus Life</a>
+            <a href="scholarships.html">Scholarships</a>
+            <a href="placements.html">Placements</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Step 3: Pay Fees</h1>
+        <form action="/process_payment" method="POST">
+            <fieldset>
+                <legend>Select Payment Method</legend>
+                <div class="payment-methods">
+                    <label class="payment-option">
+                        <input type="radio" name="payment-method" value="credit-card" required> 
+                        Credit Card
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment-method" value="debit-card"> 
+                        Debit Card
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment-method" value="net-banking"> 
+                        Net Banking
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment-method" value="upi"> 
+                        UPI
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment Details</legend>
+                <label for="card-number">Card Number (if applicable):</label>
+                <input type="text" id="card-number" name="card-number" maxlength="16" placeholder="Enter your 16-digit card number">
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="month" id="expiry-date" name="expiry-date">
+
+                <label for="pin">3-Digit PIN:</label>
+                <input type="password" id="pin" name="pin" maxlength="3" placeholder="Enter PIN" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>CAPTCHA Verification</legend>
+                <div class="captcha">
+                    <img src="2cegf.png" alt="CAPTCHA">
+                    <input type="text" name="captcha" placeholder="Enter CAPTCHA" required>
+                </div>
+            </fieldset>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </main>
+    <footer>
+        <p>© Karnavati University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutes - Karnavati University</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #005f52;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .institute-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .institute-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .institute-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .institute-card h3 {
+            color: #00796b;
+            margin: 15px 0 10px;
+        }
+
+        .institute-card p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .institute-card a {
+            display: block;
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .institute-card a:hover {
+            color: #005f52;
+        }
+
+        .admission-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .admission-link a {
+            display: inline-block;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .admission-link a:hover {
+            background-color: #005f52;
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="institutes.html">Institutes</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="campus-life.html">Campus Life</a>
+            <a href="scholarships.html">Scholarships</a>
+            <a href="placements.html">Placements</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Explore Our Institutes</h1>
+        <div class="institute-grid">
+            <!-- Institute 1 -->
+            <div class="institute-card">
+                <h3>Unitedworld Institute of Technology</h3>
+                <p>Empowering innovation through modern engineering and technology programs.</p>
+                <a href="admission-process.html">View Admission Process</a>
+            </div>
+
+            <!-- Institute 2 -->
+            <div class="institute-card">
+                <h3>Unitedworld Institute of Design</h3>
+                <p>Unleash creativity with exceptional design education and hands-on workshops.</p>
+                <a href="admission-process.html">View Admission Process</a>
+            </div>
+
+            <!-- Institute 3 -->
+            <div class="institute-card">
+                <h3>Karnavati School of Dentistry</h3>
+                <p>Shaping future dentists with advanced dental science and clinical training.</p>
+                <a href="admission-process.html">View Admission Process</a>
+            </div>
+
+            <!-- Institute 4 -->
+            <div class="institute-card">
+                <h3>Unitedworld School of Law</h3>
+                <p>Preparing legal minds with an in-depth understanding of law and justice.</p>
+                <a href="admission-process.html">View Admission Process</a>
+            </div>
+
+            <!-- Institute 5 -->
+            <div class="institute-card">
+                <h3>Unitedworld Institute of Management</h3>
+                <p>Creating global business leaders with innovative management programs.</p>
+                <a href="admission-process.html">View Admission Process</a>
+            </div>
+
+            <!-- Institute 6 -->
+            <div class="institute-card">
+                <h3>Unitedworld School of Mass Communication</h3>
+                <p>Delivering excellence in media studies and communication education.</p>
+                <a href="admission-process.html">View Admission Process</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© Karnavati University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
